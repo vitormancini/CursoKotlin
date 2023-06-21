@@ -3,8 +3,8 @@ fun main() {
     var arrayInteiros = intArrayOf(1, 2, 3, 4, 5)
 
     // ITERANDO SOBRE O ARRAY (USANDO it)
-    arrayInteiros.forEach {
-        println(it)
+    arrayInteiros.forEachIndexed { index, element ->
+        println("Elemento posição $index = $element")
     }
 
     // ITERANDO DA MESMA FORMA NUMERANDO A VARIÁVEL
